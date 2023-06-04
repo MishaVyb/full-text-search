@@ -1,0 +1,41 @@
+[tool.pytest.ini_options]
+python_files = [
+    'test_*.py'
+]
+testpaths = [
+    'tests',
+]
+markers = []
+addopts = []
+pythonpath = '.'
+
+[tool.mypy]
+ignore_missing_imports = true
+
+
+[tool.black]
+skip-string-normalization = 1       # disable converting single quote to double
+
+
+[tool.isort]
+skip_glob = '*tmp*'                 # ignoring tmp files
+profile = 'black'
+line_length = 120
+
+[tool.autoflake]
+exclude = ['venv', 'alembic', '*tmp*']
+
+
+[tool.flake8]
+max-line-length = 120
+extend-exclude = [
+    'alembic/*',
+    '*tmp*',
+    '*untitled*',
+    'venv/*',         # 'venv' not in default ingore list
+]
+classmethod-decorators = [
+    'validator',
+    'root_validator',
+    'declared_attr',
+]
