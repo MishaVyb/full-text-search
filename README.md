@@ -3,5 +3,5 @@
 * Postgres 
 * pg_trgm
 * SQLAlchemy
-* sqlalchemy_urils
+* sqlalchemy_utils
 * alembic
