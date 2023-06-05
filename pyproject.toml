@@ -11,9 +11,13 @@ pythonpath = '.'
 
 [tool.mypy]
 ignore_missing_imports = true
+plugins = [
+    'pydantic.mypy'
+]
 
 
 [tool.black]
+line_length = 120
 skip-string-normalization = 1       # disable converting single quote to double
 
 

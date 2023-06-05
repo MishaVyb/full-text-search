@@ -7,12 +7,15 @@ allowCompoundWords: true
 dictionaries:
   - python
 words:
+  - anyio
   - apscheduler
   - clsname
   - grnd
   - isort
+  - isouter
   - Misha
   - mypy
+  - nesseccery
   - ondelete
   - onupdate
   - psycopg
@@ -20,6 +23,7 @@ words:
   - pytest
   - sqlalchemy
   - testdb
+  - trgm
   - venv
   - vybornyy
 ignoreWords: []
