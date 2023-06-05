@@ -1,6 +1,8 @@
 # full-text-search
 Full Text Search in PostgreSQL with SQLAlchemy by Trigrams with `pg_trgm` Postgres extension.
 
+For explanation see [WiKi](https://github.com/MishaVyb/full-text-search/wiki/Full-Text-Search-in-PostgreSQL-with-SQLAlchemy).
+
 # FuzzySearchService
 Usefull for full-text search on single Table on multiply columns.
 
