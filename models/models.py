@@ -44,7 +44,7 @@ articles_search = FuzzySearchService(
     ArticleModel.title,
     ArticleModel.body,
     similarity_limit=0.01,
-    create_index=True,
+    init_index=True,
 )
 
 
@@ -68,6 +68,6 @@ full_search = MaterializedSearchService(
         Base.metadata,
     ),
     similarity_limit=0.01,
-    create_index=True,
+    init_index=True,
 )
 """Full text search on Authors and Articles. """
